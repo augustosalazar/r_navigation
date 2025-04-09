@@ -3,7 +3,7 @@ import { Button, TextInput } from "react-native-paper";
 import { Appbar } from "react-native-paper";
 import * as React from "react";
 
-export function Page1() {
+export function Page1({ navigation }) {
   const [text, setText] = React.useState("");
 
   return (
@@ -12,9 +12,6 @@ export function Page1() {
         flex: 1,
       }}
     >
-      <Appbar.Header>
-        <Appbar.Content title="Welcome to this app!" />
-      </Appbar.Header>
 
       <View style={styles.container}>
         <Text style={{ fontSize: 20, marginBottom: 20 }}>
@@ -25,7 +22,7 @@ export function Page1() {
           value={text}
           onChangeText={(text) => setText(text)}
         />
-        <Button mode="contained" onPress={() => console.log("Pressed")}>
+        <Button mode="contained" onPress={() => navigation.navigate('Page2')}>
           Continue
         </Button>
       </View>

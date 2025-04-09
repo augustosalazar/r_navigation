@@ -11,8 +11,8 @@ export default function App() {
     <PaperProvider>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Page1">
-          <Stack.Screen name="Page1" component={Page1} />
-          <Stack.Screen name="Page2" component={Page2} />
+          <Stack.Screen name="Page1" component={Page1} options={{ title: 'Welcome to this app' }} />
+          <Stack.Screen name="Page2" component={Page2} options={{ title: 'Overview' }} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>

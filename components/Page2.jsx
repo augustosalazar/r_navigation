@@ -3,16 +3,13 @@ import { Button, TextInput } from "react-native-paper";
 import { Appbar } from "react-native-paper";
 import * as React from "react";
 
-export function Page2() {
+export function Page2({ navigation }) {
   return (
     <View
       style={{
         flex: 1,
       }}
     >
-      <Appbar.Header>
-        <Appbar.Content title="Welcome to this app!" />
-      </Appbar.Header>
 
       <View style={styles.container}>
         <Text style={{ fontSize: 20, marginBottom: 20 }}>
