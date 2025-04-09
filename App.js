@@ -1,21 +1,20 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
 import { Page1 } from "./components/Page1";
+import { Page2 } from "./components/Page2";
 import { PaperProvider } from "react-native-paper";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <PaperProvider>
-      <View style={styles.container}>
-        <Page1 />
-        <StatusBar style="auto" />
-      </View>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Page1">
+          <Stack.Screen name="Page1" component={Page1} />
+          <Stack.Screen name="Page2" component={Page2} />
+        </Stack.Navigator>
+      </NavigationContainer>
     </PaperProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});

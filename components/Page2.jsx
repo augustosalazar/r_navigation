@@ -3,9 +3,7 @@ import { Button, TextInput } from "react-native-paper";
 import { Appbar } from "react-native-paper";
 import * as React from "react";
 
-export function Page1() {
-  const [text, setText] = React.useState("");
-
+export function Page2() {
   return (
     <View
       style={{
@@ -18,16 +16,8 @@ export function Page1() {
 
       <View style={styles.container}>
         <Text style={{ fontSize: 20, marginBottom: 20 }}>
-          Please enter your name and press the button below to continue.
+          This is the second page.
         </Text>
-        <TextInput
-          label="Name"
-          value={text}
-          onChangeText={(text) => setText(text)}
-        />
-        <Button mode="contained" onPress={() => console.log("Pressed")}>
-          Continue
-        </Button>
       </View>
     </View>
   );
