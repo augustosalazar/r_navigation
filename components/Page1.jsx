@@ -1,6 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
 import { Button, TextInput } from "react-native-paper";
-import { Appbar } from "react-native-paper";
 import * as React from "react";
 
 export function Page1({ navigation }) {
@@ -12,7 +11,6 @@ export function Page1({ navigation }) {
         flex: 1,
       }}
     >
-
       <View style={styles.container}>
         <Text style={{ fontSize: 20, marginBottom: 20 }}>
           Please enter your name and press the button below to continue.
@@ -22,7 +20,15 @@ export function Page1({ navigation }) {
           value={text}
           onChangeText={(text) => setText(text)}
         />
-        <Button mode="contained" onPress={() => navigation.navigate('Page2')}>
+        <Button
+          mode="contained"
+          onPress={() =>
+            navigation.reset({
+              index: 0,
+              routes: [{ name: "Page2", params: { name: text } }],
+            })
+          }
+        >
           Continue
         </Button>
       </View>
