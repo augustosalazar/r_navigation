@@ -13,7 +13,7 @@ prettier
 
 ## Demo
 
-![image](https://github.com/user-attachments/assets/fe2d608a-dc87-451c-a1f8-096cae72e7cd)
+<img src=https://github.com/augustosalazar/f_navigation/assets/4458129/379f4ca2-0ad2-4ba6-bf05-262989247233 width="300" />
 
 ## Similar to  
 https://github.com/augustosalazar/f_navigation_template
