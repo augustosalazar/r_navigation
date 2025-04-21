@@ -12,18 +12,7 @@ export default function App() {
   return (
     <PaperProvider>
       <NavigationContainer>
-        <Stack.Navigator
-          initialRouteName="Page1"
-          // screenOptions={{
-          //   headerStyle: {
-          //     backgroundColor: "#f4511e",
-          //   },
-          //   headerTintColor: "#fff",
-          //   headerTitleStyle: {
-          //     fontWeight: "bold",
-          //   },
-          // }}
-        >
+        <Stack.Navigator initialRouteName="Page1">
           <Stack.Screen
             name="Page1"
             component={Page1}
@@ -33,21 +22,21 @@ export default function App() {
             name="Page2"
             component={Page2}
             options={({ route }) => ({
-              title: `Helloo ${route.params.name}`, // Dynamically set the title
+              title: `Helloo ${route.params.name}` // Dynamically set the title
             })}
           />
           <Stack.Screen
             name="Page3a"
             component={Page3a}
             options={({ route }) => ({
-              title: `${route.params.name} Option A`, // Dynamically set the title
+              title: `${route.params.name} Option A` // Dynamically set the title
             })}
           />
           <Stack.Screen
             name="Page3b"
             component={Page3b}
             options={({ route }) => ({
-              title: `${route.params.name} Option B`, // Dynamically set the title
+              title: `${route.params.name} Option B` // Dynamically set the title
             })}
           />
         </Stack.Navigator>

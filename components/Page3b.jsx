@@ -39,18 +39,18 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    margin: 20,
+    margin: 20
   },
   snackbarTop: {
     position: "absolute",
     top: 0, // At the top of the screen
     left: 0,
-    right: 0,
+    right: 0
   },
   snackbarBottom: {
     position: "absolute",
     bottom: 0, // At the bottom of the screen
     left: 0,
-    right: 0,
-  },
+    right: 0
+  }
 });

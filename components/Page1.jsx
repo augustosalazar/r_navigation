@@ -8,7 +8,7 @@ export function Page1({ navigation }) {
   return (
     <View
       style={{
-        flex: 1,
+        flex: 1
       }}
     >
       <View style={styles.container}>
@@ -25,7 +25,7 @@ export function Page1({ navigation }) {
           onPress={() =>
             navigation.reset({
               index: 0,
-              routes: [{ name: "Page2", params: { name: text } }],
+              routes: [{ name: "Page2", params: { name: text } }]
             })
           }
         >
@@ -40,6 +40,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "space-around",
-    margin: 20,
-  },
+    margin: 20
+  }
 });

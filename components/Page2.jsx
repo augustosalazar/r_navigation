@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import { Button } from "react-native-paper";
 import * as React from "react";
-import { CommonActions } from "@react-navigation/native";
 
 export function Page2({ route, navigation }) {
   const { name } = route.params;
@@ -16,20 +15,20 @@ export function Page2({ route, navigation }) {
             console.log("Logout pressed");
             navigation.reset({
               index: 0,
-              routes: [{ name: "Page1" }],
+              routes: [{ name: "Page1" }]
             });
           }}
         >
           Logout
         </Button>
-      ),
+      )
     });
   }, [navigation, name]);
 
   return (
     <View
       style={{
-        flex: 1,
+        flex: 1
       }}
     >
       <View style={styles.container}>
@@ -43,7 +42,7 @@ export function Page2({ route, navigation }) {
             onPress={() => {
               console.log("Option A pressed");
               navigation.navigate("Page3a", {
-                name: name,
+                name: name
               });
             }}
           >
@@ -55,7 +54,7 @@ export function Page2({ route, navigation }) {
             onPress={() => {
               console.log("Option B pressed");
               navigation.navigate("Page3b", {
-                name: name,
+                name: name
               });
             }}
           >
@@ -72,6 +71,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    margin: 20,
-  },
+    margin: 20
+  }
 });
