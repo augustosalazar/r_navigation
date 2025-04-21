@@ -11,6 +11,9 @@ react-native-web
 eslint   
 prettier
 
+## Demo
+
+![image](https://github.com/user-attachments/assets/fe2d608a-dc87-451c-a1f8-096cae72e7cd)
 
 ## Similar to  
 https://github.com/augustosalazar/f_navigation_template
